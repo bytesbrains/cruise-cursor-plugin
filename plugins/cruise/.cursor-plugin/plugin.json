@@ -6,7 +6,7 @@
     "name": "BytesBrains",
     "email": "hello@bytesbrains.com"
   },
-  "homepage": "https://cruise.bytesbrains.net/docs",
+  "homepage": "https://bytesbrains.com/cruise/",
   "repository": "https://github.com/bytesbrains/cruise-cursor-plugin",
   "license": "SEE LICENSE IN LICENSE.txt",
   "keywords": ["cruise", "llm-gateway", "budgets", "mcp", "bytesbrains"],

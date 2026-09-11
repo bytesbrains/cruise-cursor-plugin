@@ -1,6 +1,6 @@
 # BytesBrains Cruise for Cursor
 
-[BytesBrains Cruise](https://cruise.bytesbrains.net/docs) is one endpoint in front of every
+[BytesBrains Cruise](https://bytesbrains.com/cruise/) is one endpoint in front of every
 model provider, with per-project keys, budgets that stop a runaway loop, and a ledger of
 every request. This plugin brings Cruise's **read-only MCP tools** and setup guidance into
 Cursor. It is **not** a model provider extension — Cursor has no API for that.
