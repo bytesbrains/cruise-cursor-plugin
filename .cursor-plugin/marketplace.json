@@ -1,0 +1,17 @@
+{
+  "name": "bytesbrains",
+  "owner": {
+    "name": "BytesBrains",
+    "email": "hello@bytesbrains.com"
+  },
+  "metadata": {
+    "description": "Cursor plugins for BytesBrains Cruise — one gateway in front of every model provider, with per-project keys, budgets and a cost ledger."
+  },
+  "plugins": [
+    {
+      "name": "cruise",
+      "source": "./plugins/cruise",
+      "description": "BytesBrains Cruise in Cursor: your key's models, budget and spend over MCP, a skill for lanes and refusals, and a guided setup for IDE BYOK. Agent CLI gets Cruise tools only — Cursor does not route CLI inference through a custom base URL."
+    }
+  ]
+}

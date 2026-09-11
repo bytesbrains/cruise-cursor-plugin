@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "cruise": {
+      "url": "${CRUISE_BASE_URL}/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CRUISE_API_KEY}"
+      }
+    }
+  }
+}

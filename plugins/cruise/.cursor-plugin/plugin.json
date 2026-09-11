@@ -1,0 +1,30 @@
+{
+  "name": "cruise",
+  "version": "0.1.0",
+  "description": "Your Cruise key's models, budget and spend over MCP, a skill for choosing lanes and reading Cruise's refusals, and /cruise:setup for IDE BYOK. Agent CLI inference stays on Cursor — this plugin does not redirect it.",
+  "author": {
+    "name": "BytesBrains",
+    "email": "hello@bytesbrains.com"
+  },
+  "homepage": "https://cruise.bytesbrains.net/docs",
+  "repository": "https://github.com/bytesbrains/cruise-cursor-plugin",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "keywords": ["cruise", "llm-gateway", "budgets", "mcp", "bytesbrains"],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "CRUISE_API_KEY": {
+        "type": "string",
+        "title": "Cruise API key",
+        "description": "A cru_ key for this machine. Prefer one that is rate-limited and scoped to the models you will use. Never paste a provider credential."
+      },
+      "CRUISE_BASE_URL": {
+        "type": "string",
+        "title": "Cruise base URL",
+        "description": "Origin only, no path. Production default; set https://cruise-demo.bytesbrains.net for the free demo.",
+        "default": "https://cruise.bytesbrains.net"
+      }
+    },
+    "required": ["CRUISE_API_KEY"]
+  }
+}
