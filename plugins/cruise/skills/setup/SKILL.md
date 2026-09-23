@@ -24,7 +24,7 @@ If the tools are missing or answer 401:
 - set **Cruise API key** on the plugin; leave base URL at production, or set
   `https://cruise-demo.bytesbrains.net` with a `cru_demo_` key for the free demo;
 - reload the window / restart Agent CLI so MCP picks up the variables, then run
-  `/cruise:setup` again.
+  `/cruise-setup` again.
 
 ## 2. The MCP server
 
