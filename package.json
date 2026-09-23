@@ -1,0 +1,25 @@
+{
+  "name": "cruise-cursor-plugin",
+  "version": "0.1.0",
+  "description": "The BytesBrains Cruise plugin for Cursor — MCP budget tools, a skill for lanes and refusals, and /cruise:setup for IDE BYOK.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bytesbrains/cruise-cursor-plugin.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "prepare": "git config core.hooksPath .githooks || true",
+    "typecheck": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "secrets:scan": "gitleaks detect --source . --redact --no-banner --config .gitleaks.toml"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "typescript": "^5.9.2",
+    "vitest": "4.1.11"
+  }
+}
