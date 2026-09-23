@@ -4,7 +4,8 @@
 // makes — marketplace and manifest agree, MCP uses plugin variables and never
 // a baked-in key, skills say when they apply, and setup refuses to claim CLI
 // inference goes through Cruise.
-import { readdirSync, readFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 
@@ -12,13 +13,16 @@ const ROOT = path.join(import.meta.dirname, "..");
 const PLUGIN = path.join(ROOT, "plugins/cruise");
 const json = (file: string) => JSON.parse(readFileSync(path.join(ROOT, file), "utf8")) as Record<string, any>;
 
-/** Every file the published copy carries, test and workspace plumbing excluded. */
-function published(dir = ROOT): string[] {
-  return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
-    const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) return [".git", "node_modules", "test"].includes(entry.name) ? [] : published(full);
-    return [full];
-  });
+/**
+ * Every file git would publish: tracked, or new and not ignored. An ignored
+ * file such as a local .env never leaves the machine, so it is not checked.
+ * Test plumbing is excluded.
+ */
+function published(): string[] {
+  return execFileSync("git", ["ls-files", "-z", "--cached", "--others", "--exclude-standard"], { cwd: ROOT, encoding: "utf8" })
+    .split("\0")
+    .filter((file) => file && !file.startsWith("test/") && existsSync(path.join(ROOT, file)))
+    .map((file) => path.join(ROOT, file));
 }
 
 describe("the manifest and the marketplace", () => {
