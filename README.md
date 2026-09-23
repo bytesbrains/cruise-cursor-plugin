@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://bytesbrains.com/cruise/"><img src="assets/cruise-logo.svg" alt="Cruise" width="360"></a>
+</p>
+
 # BytesBrains Cruise for Cursor
 
 [BytesBrains Cruise](https://bytesbrains.com/cruise/) is one endpoint in front of every

@@ -6,6 +6,7 @@
     "name": "BytesBrains",
     "email": "hello@bytesbrains.com"
   },
+  "logo": "assets/logo.svg",
   "homepage": "https://bytesbrains.com/cruise/",
   "repository": "https://github.com/bytesbrains/cruise-cursor-plugin",
   "license": "Apache-2.0",
