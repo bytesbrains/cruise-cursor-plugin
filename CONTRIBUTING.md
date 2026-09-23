@@ -57,7 +57,8 @@ with a `cru_demo_` key.
 ## Releasing (maintainers)
 
 A release is a **tag** that a person cuts. Bump `plugins/cruise/.cursor-plugin/plugin.json`'s
-`version` on every release, then submit at cursor.com/marketplace/publish:
+`version` on every release. The plugin is not listed on the Cursor Marketplace: users add this
+repository as a plugin marketplace, so a pushed tag is the whole release.
 
 1. In the pull request that makes the change, bump `version` in
    `plugins/cruise/.cursor-plugin/plugin.json`, and match it in `package.json`. The test

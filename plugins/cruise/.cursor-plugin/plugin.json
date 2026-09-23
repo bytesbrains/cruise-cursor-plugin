@@ -1,7 +1,7 @@
 {
   "name": "cruise",
   "version": "0.2.0",
-  "description": "Your Cruise key's models, budget and spend over MCP, a skill for choosing lanes and reading Cruise's refusals, and /cruise:setup for IDE BYOK. Agent CLI inference stays on Cursor — this plugin does not redirect it.",
+  "description": "Your Cruise key's models, budget and spend over MCP, a skill for choosing lanes and reading Cruise's refusals, and /cruise-setup for IDE BYOK. Agent CLI inference stays on Cursor — this plugin does not redirect it.",
   "author": {
     "name": "BytesBrains",
     "email": "hello@bytesbrains.com"

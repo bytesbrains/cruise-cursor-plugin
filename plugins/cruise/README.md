@@ -8,7 +8,13 @@ path for the CLI — and it is not a VS Code-style language-model provider.
 
 ## Install
 
-From the Cursor Marketplace (once listed), or while developing from this tree:
+From this repository as a plugin marketplace (it is not listed on the Cursor Marketplace):
+
+```sh
+agent plugin marketplace add https://github.com/bytesbrains/cruise-cursor-plugin
+```
+
+Then run `/plugins` in `agent` and install **cruise**. While developing from this tree:
 
 ```sh
 agent --plugin-dir ./plugins/cruise
@@ -31,7 +37,8 @@ Then run **`/cruise-setup`**.
 
 - **IDE BYOK** is Settings → Models (OpenAI key + base URL `/v1` + a Cruise model id). The
   plugin guides it; it cannot register models into Cursor's picker by itself.
-- **Agent CLI** gets the MCP tools only. Inference stays on Cursor until they add BYOK.
+- **Agent CLI** gets the MCP tools only. Every CLI chat runs on Cursor and uses your Cursor
+  quota, so the plugin cannot keep you working on Cruise when that quota runs out.
 - The plugin never stores your key in the repo or in a synced settings file — only the
   plugin variable `CRUISE_API_KEY`.
 

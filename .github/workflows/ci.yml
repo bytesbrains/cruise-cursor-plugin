@@ -1,7 +1,7 @@
 # Types, tests and secrets scan on every PR and on main.
 #
 # There is no automated publish step: a release is a person cutting a `v*` tag
-# on main and submitting to cursor.com/marketplace/publish (CONTRIBUTING.md → Releasing).
+# on main (CONTRIBUTING.md → Releasing).
 name: ci
 
 on:
