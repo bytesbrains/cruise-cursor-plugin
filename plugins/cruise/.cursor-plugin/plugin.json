@@ -8,7 +8,7 @@
   },
   "homepage": "https://bytesbrains.com/cruise/",
   "repository": "https://github.com/bytesbrains/cruise-cursor-plugin",
-  "license": "SEE LICENSE IN LICENSE.txt",
+  "license": "Apache-2.0",
   "keywords": ["cruise", "llm-gateway", "budgets", "mcp", "bytesbrains"],
   "variables": {
     "type": "object",

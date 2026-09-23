@@ -48,5 +48,8 @@ key scoping to lane members, Free plan).
 
 ## Licence
 
-See [`plugins/cruise/LICENSE.txt`](plugins/cruise/LICENSE.txt). Published from the
-`clients/cursor/` directory of BytesBrains Cruise.
+[Apache-2.0](LICENSE); see [`NOTICE`](NOTICE). The plugin carries the same text in
+[`plugins/cruise/`](plugins/cruise/LICENSE.txt), because that directory is all an install copies.
+The license covers this plugin's code only. The Cruise service is governed by the terms of service
+of BytesBrains Pte. Ltd., and the BytesBrains and Cruise names are not licensed. Releases up to
+v0.1.0 keep the licence they shipped with.
