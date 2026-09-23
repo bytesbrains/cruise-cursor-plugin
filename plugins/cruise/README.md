@@ -37,4 +37,6 @@ Then run **`/cruise-setup`**.
 
 ## Licence
 
-See [`LICENSE.txt`](LICENSE.txt).
+[Apache-2.0](LICENSE.txt); see [`NOTICE`](NOTICE). The license covers this plugin's code only.
+The Cruise service is governed by the terms of service of BytesBrains Pte. Ltd., and the BytesBrains
+and Cruise names are not licensed. Releases up to v0.1.0 keep the licence they shipped with.
