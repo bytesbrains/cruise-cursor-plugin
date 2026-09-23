@@ -46,6 +46,13 @@ Try without spending: set base URL to `https://cruise-demo.bytesbrains.net` and 
 Run `/cruise-setup` for the full walkthrough and caveats (override vs Cursor-owned models,
 key scoping to lane members, Free plan).
 
+## Development
+
+This repository is the source of the plugin. Develop, test and release it here. A change is a
+pull request here, and a bug or request is an issue here. `npm ci && npm test` runs the plugin's
+contract tests. [`CONTRIBUTING.md`](CONTRIBUTING.md) covers the checks and how a release is cut.
+To report a vulnerability, see [`SECURITY.md`](SECURITY.md).
+
 ## Licence
 
 [Apache-2.0](LICENSE); see [`NOTICE`](NOTICE). The plugin carries the same text in
