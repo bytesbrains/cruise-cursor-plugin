@@ -1,6 +1,6 @@
 {
   "name": "cruise-cursor-plugin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "description": "The BytesBrains Cruise plugin for Cursor — MCP budget tools, a skill for lanes and refusals, and /cruise-setup for IDE BYOK.",
   "license": "Apache-2.0",
