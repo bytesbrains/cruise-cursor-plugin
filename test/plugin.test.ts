@@ -16,7 +16,8 @@ const json = (file: string) => JSON.parse(readFileSync(path.join(ROOT, file), "u
 /**
  * Every file git would publish: tracked, or new and not ignored. An ignored
  * file such as a local .env never leaves the machine, so it is not checked.
- * Test plumbing is excluded.
+ * Only the root test/ is excluded: it is repo plumbing. A test/ inside
+ * plugins/cruise/ would ship with an install, so it is scanned like the rest.
  */
 function published(): string[] {
   return execFileSync("git", ["ls-files", "-z", "--cached", "--others", "--exclude-standard"], { cwd: ROOT, encoding: "utf8" })
